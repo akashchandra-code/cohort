@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/bg.png");
+    background-size: cover;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+.nav{
+    width: 100%;
+    display: flex;
+    gap: 9rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.nav .logo-img{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+.nav .links ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.nav .links a:hover{
+    color: #ff4d4d;
+}
+.nav .social-icons{
+    display: flex;
+    gap: 1rem;
+}
+.nav .social-icons svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: white;
+    cursor: pointer;
+}
+.nav .social-icons svg:hover{
+    fill: #ff4d4d;
+}
+.hero{
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 80vh;
+    position: relative;
+}
+
+.hero img{
+    height: 33rem;
+    width: 33rem;
+    position: absolute;
+    left:31rem;
+    top: 2rem;
+    object-fit: cover;
+}
+.hero h1{
+    font-size: 10rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    left: 22%;
+    top: 32%;
+}
+.hero h2{
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: 23%;
+    top: 31%;
+}
+.hero h3{
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    position: absolute;
+    right: 21%;
+    top: 63%;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    bottom: -74px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 220px;
+    background: #2b2635;
+    border-radius:  50% 50% 0 0;
+}
+.vision{
+    background: #2b2635;
+    
+}
+.vision h2{
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 71%;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    z-index: 1;
+    border-bottom: 2px solid #ffff;
+}
+.vision div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    
+}
+.vision div p{
+    width: 40%;
+    padding: 0 3rem;
+    margin-top: -2.5rem;
+}
